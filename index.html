@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Guess that Pokemon</title>
+    <link rel="stylesheet" href="styling.css" />
+
+</head>
+<body>
+    <div id="nav-bar" >
+        Whose that Pokemon!
+    </div>
+
+    <div class="mid-sec">
+        <div class="format-sec">
+            <div class="left-sec">
+                <div class="pokedex-outline">
+                    <div class="top-sec">
+                        <img id="blue-circle" src="blue-circle.png" />
+                        <img id="lights" src="three-lights.png" />
+                    </div>
+                    <div class="bottom-sec">
+                        <div class="top-sec" id="screen">
+                            <div class="screen-obj">
+                                <div class="pokemon">
+                                    <img id="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-sec" id="bottom-dex">
+                            <form autocomplete="off">
+                                <label for="text" id="guess-bar">
+
+                                </label>
+                                <input type="text" name="idk" id="guess" />
+                            </form>
+                            <button id="clue-button" class="option-buttons">
+                                Reset
+                            </button>
+                            <button id="next-button" class="option-buttons">
+                                Skip
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sec">
+                <div class="options-block">
+                    <div id="choices">
+                        <label for="generation_choice"> Generation: </label>
+                        <select name="generation_menu" id="generation_menu">
+                            <option value="gAll"> All </option>
+                            <option value="g1"> Gen 1 </option>
+                            <option value="g2"> Gen 2 </option>
+                            <option value="g3"> Gen 3 </option>
+                            <option value="g4"> Gen 4 </option>
+                            <option value="g5"> Gen 5 </option>
+                            <option value="g6"> Gen 6 </option>
+                            <option value="g7"> Gen 7 </option>
+                            <option value="g8"> Gen 8 </option>
+                            <option value="g9"> Gen 9 </option>
+                        </select>
+                    </div>
+                    <div id="modes">
+                        <label for="gamemode"> Gamemode: </label>
+                        <select name="gamemode_menu" id="gamemode_menu">
+                            <option value="classic"> Classic </option>
+                            <option value="timed"> Timed </option>
+                        </select>
+                    </div>
+                    <div class="boxes">
+                        TIME:
+                        <div id="timer">
+                            0
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        SCORE:
+                        <div id="score">
+                            0
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
