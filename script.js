@@ -28,6 +28,7 @@ let titlePoke = document.getElementById("poke-name");
 let scoreboard = document.getElementById("score");
 let textB = document.getElementById("guess");
 
+
 //titlePoke.innerHTML = name;
 function getPokemon() {
     randomPoke = lRUP(randomNum());

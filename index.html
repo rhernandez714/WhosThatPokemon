@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <title>Guess that Pokemon</title>
     <link rel="stylesheet" href="styling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -26,6 +29,7 @@
                                 <div class="pokemon">
                                     <img id="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" />
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="bottom-sec" id="bottom-dex">
@@ -36,7 +40,7 @@
                                 <input type="text" name="idk" id="guess" />
                             </form>
                             <button id="clue-button" class="option-buttons">
-                                Reset
+                                Clue
                             </button>
                             <button id="next-button" class="option-buttons">
                                 Skip
@@ -47,8 +51,24 @@
             </div>
             <div class="right-sec">
                 <div class="options-block">
-                    <div id="choices">
-                        <label for="generation_choice"> Generation: </label>
+                    <div class="boxes" style="border-bottom: solid">
+                        TIME:&nbsp
+                        <div id="timer">
+                            0
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        SCORE:&nbsp
+                        <div id="score">
+                            0
+                        </div>
+                    </div>
+
+                </div>
+                <div class="options-block">
+
+                    <div id="choices" style="border-bottom: solid">
+                        <label for="generation_choice"> Generation:&nbsp </label>
                         <select name="generation_menu" id="generation_menu">
                             <option value="gAll"> All </option>
                             <option value="g1"> Gen 1 </option>
@@ -63,12 +83,13 @@
                         </select>
                     </div>
                     <div id="modes">
-                        <label for="gamemode"> Gamemode: </label>
+                        <label for="gamemode"> Gamemode:&nbsp </label>
                         <select name="gamemode_menu" id="gamemode_menu">
                             <option value="classic"> Classic </option>
                             <option value="timed"> Timed </option>
                         </select>
                     </div>
+                    <!--
                     <div class="boxes">
                         TIME:
                         <div id="timer">
@@ -80,7 +101,11 @@
                         <div id="score">
                             0
                         </div>
+     
+                            
+                        
                     </div>
+                    -->
                 </div>
                 
             </div>

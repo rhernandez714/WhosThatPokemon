@@ -3,11 +3,13 @@
     justify-content: left;
     align-items: center;
     height: 80px;
-    background-color: #A0C1B9;
+    background-color: #CCCED8;
+    /*
+        #CCCED8
+    */
     font-size: 25px;
     font-weight: bolder;
     padding-left: 20px;
-
 }
 
 #footer {
@@ -31,30 +33,36 @@
 }
 .left-sec {
     width: 50%;
-    display:flex;
+    display: flex;
     justify-content: right;
     align-items: center;
-
+    
 }
 
 .format-sec{
     display: flex;
 }
 .pokedex-outline {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     height: 550px;
     width: 450px;
     border-radius: 40px;
     background-color: #ed1e24;
     margin: 20px;
     border: solid;
+    border-width: 5px;
+    
+    border-color: #C0090D;
 }
 
-.top-sec{
+.top-sec {
     height: 15%;
     border-bottom: solid;
+    border-color: #C0090D;
     display: flex;
     justify-content: left;
     align-items: start;
+    border-width: 5px;
 }
 .bottom-sec{
     height: 85%;
@@ -77,6 +85,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+
 }
 #bottom-dex {
     height: 30%;
@@ -89,10 +98,17 @@
     border: none;
 }
 .screen-obj {
-    background-color: #EAEAEA;
+    background-color: #ccd0cb;
+    /*
+        ccd0cb
+        #EAEAEA
+        border-radius: 15px;
+    */
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     height: 80%;
     width: 80%;
-    border-radius: 15px;
+    border-radius: 2px;
     background-image: url("pokemon-background.png");
     background-size: 304px 171px;
     background-repeat: no-repeat;
@@ -112,20 +128,30 @@
 
 .option-buttons{
     margin: 5px;
+    border-radius: 3px;
+    border: none;
+    transition-duration: 0.25s;
+    padding: 3px;
+}
+.option-buttons:hover{
+    opacity: 0.85;
 }
 
+
 .right-sec{
-    display: flex;
+    display: block;
     width: 50%;
 }
 .options-block{
-    height: 60%;
+    height: 20%;
     display: block;
-    
+    margin: 20px;
 }
 
 #guess{
-
+    border:none;
+    height: 30px;
+    width: 250px;
 }
 
 .options-block{
@@ -139,11 +165,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    height: 50%;
 }
 
 #modes {
-    height: 25%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +179,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    height: 50%;
 }
 #timer {
 
@@ -163,8 +189,8 @@
 }
 
 body {
-    
-    background-color: #706993;
+    background-color: #A0A4B8;
+    font-family: 'Poppins' , sans-serif;
 }
 #footer {
     /*
@@ -174,3 +200,9 @@ body {
     height: 150px;
     font-weight: 400;
 }
+
+#score1 {
+    position: relative;
+    top: 110px;
+    left: 60px;
+}   
